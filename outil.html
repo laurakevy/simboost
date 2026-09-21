@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quel challenge Sims ? - SimBoost</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f0ff;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #8b5cf6;
+            color: white;
+            padding: 45px 20px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .boite {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #6d28d9;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5420a8;
+        }
+
+        #resultat {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #6d28d9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎲 Challenge aléatoire</h1>
+    <p>Laisse SimBoost choisir ton prochain défi !</p>
+</header>
+
+<main>
+
+    <p>
+        <a href="index.html">← Retour à l'accueil</a>
+    </p>
+
+    <div class="boite">
+
+        <h2>Quel challenge vas-tu faire ?</h2>
+
+        <p>
+            Clique sur le bouton pour découvrir ton défi.
+        </p>
+
+        <button onclick="choisirChallenge()">
+            🎲 Choisir mon challenge
+        </button>
+
+        <div id="resultat"></div>
+
+    </div>
+
+</main>
+
+<script>
+
+function choisirChallenge() {
+
+    const challenges = [
+        "💰 Challenge Sans-abri",
+        "👨‍👩‍👧 Challenge Générations",
+        "🏠 Challenge Construction",
+        "💎 Challenge Riche",
+        "🎨 Challenge Artiste",
+        "👨‍🍳 Challenge Cuisine",
+        "📚 Challenge Étudiant"
+    ];
+
+    const nombre = Math.floor(Math.random() * challenges.length);
+
+    document.getElementById("resultat").textContent =
+        challenges[nombre];
+}
+
+</script>
+
+</body>
+</html>
