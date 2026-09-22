@@ -160,6 +160,63 @@ font-size: 18px;
     }
 }
 </style>
+<style>
+.astuce-du-jour {
+    background: white;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(109, 40, 217, 0.2);
+    text-align: center;
+}
+
+.astuce-du-jour h2 {
+    color: #6d28d9;
+}
+
+#astuce {
+    font-size: 18px;
+    color: #444;
+}
+</style>
+Rédiger
+Écrire à Vanden Eede Laura
+<style>
+.populaires {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.populaires h2 {
+    color: #6d28d9;
+}
+
+.cartes-populaires {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cartes-populaires a {
+    background: #6d28d9;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cartes-populaires a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+</style>
+
+
 </head>
 
 <body>
@@ -177,6 +234,19 @@ font-size: 18px;
 <a href="Outil.html">🎲 Challenge aléatoire</a>
 </nav>
 
+<section class="populaires">
+    <h2>🔥 Les plus populaires</h2>
+
+    <p>✨ Découvre nos contenus préférés des joueurs !</p>
+
+    <div class="cartes-populaires">
+        <a href="Astuces.html">✨ Astuces Sims</a>
+        <a href="Challenges.html">🎯 Challenges Sims</a>
+        <a href="Outil.html">🎲 Challenge aléatoire</a>
+    </div>
+</section>
+Rédiger
+Écrire à Vanden Eede Laura
 <main>
 
     <section class="bienvenue"><p>
@@ -243,6 +313,11 @@ Rédiger
     </section>
 
     <section id="maisons">
+        <section class="astuce-du-jour">
+    <h2>💡 Astuce du jour</h2>
+    <p id="astuce"></p>
+</section>
+
         <h2>🏠 Maisons</h2>
         <p>✨ Découvre des idées de maisons pour créer la vie de tes rêves dans Les Sims !</p>
 
@@ -300,6 +375,18 @@ Rédiger
     <p>© 2026 SimBoost — Site de fans indépendant</p>
 </footer>
 
-</body>
+<script>
+const astuces = [
+    "💰 Utilise les codes de triche pour gagner du temps.",
+    "🏠 Pense à améliorer régulièrement ta maison.",
+    "❤️ Fais des activités avec tes Sims pour améliorer leurs relations.",
+    "🎯 Essaie un nouveau challenge pour changer ta façon de jouer.",
+    "🌱 Les plantes peuvent être une bonne source de revenus."
+];
+
+const astuceAleatoire = astuces[Math.floor(Math.random() * astuces.length)];
+
+document.getElementById("astuce").textContent = astuceAleatoire;
+</script></body>
 </html>
 
