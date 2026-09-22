@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quel challenge Sims ? - SimBoost</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f0ff;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+            color: white;
+            padding: 45px 20px;
+        }
+        header h1 {
+    animation: apparition 0.8s ease;
+}
+nav {
+    background: #4c1d95;
+    text-align: center;
+    padding: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+        main {
+            max-width: 700px;
+            margin: auto;
+            padding: 50px 20px;
+        
+        }
+        .outil {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+        .boite {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #6d28d9;
+            color: white;
+            border: 2px solid #8b5cf6;
+            padding: 15px 25px;
+            border-radius: 15px;
+            margin-top: 10px;
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+        font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            animation: apparition 0.6s ease;
+        }
+button:hover {
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.25);
+opacity: 0.9;
+}
+}
+button:active {
+    transform: scale(0.95);
+}
+        button:hover {
+            background: #5420a8;
+            background: #7c3aed;
+
+        }
+
+        #resultat {
+    margin-top: 25px;
+    padding: 30px;
+    background: white;
+    color: #d928c1;
+    border: 3px dashed #f65ce7;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(217, 40, 196, 0.25);
+
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(217, 40, 214, 0.2);
+    letter-spacing: 0.05px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+#resultat {
+    animation: apparition 0.6s ease;
+}
+#message {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #6d28d9;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+#conseil {
+    color: #7c3aed;
+    font-size: 16px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+       transform: scale(0.9) translateY(10px);
+
+    }
+
+    to {
+        opacity: 1;
+    transform: scale(1) translateY(0);
+    }
+}
+        a {
+            color: #6d28d9;
+        }
+        .outil h2 {
+    color: #6d28d9;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+
+}
+.outil > p {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="Index.html">Accueil</a>
+    <a href="Astuces.html">✨ Astuces</a>
+    <a href="Index.html#maisons">Maisons</a>
+    <a href="Challenges.html">Challenges</a>
+    <a href="Outil.html">🎲 Challenge aléatoire</a>
+</nav>
+<header>
+    <h1>🎲 Challenge aléatoire</h1>
+    <p>Laisse SimBoost choisir ton prochain défi !</p>
+</header>
+
+<main>
+<div class="outil">
+<h2>🎯 Prêt pour ton challenge ?</h2>
+<p>✨ Clique sur le bouton et découvre ton prochain défi !</p>
+    <p>
+        <a href="index.html">← Retour à l'accueil</a>
+    </p>
+
+    <div class="boite">
+
+        <h2>Quel challenge vas-tu faire ?</h2>
+
+        <p>
+            Clique sur le bouton pour découvrir ton défi.
+        </p>
+
+        <button onclick="choisirChallenge()">
+            🎲 Choisir mon challenge
+        </button>
+<p id="message">✨ Prépare-toi…</p>
+<p id="conseil">✨ Bonne chance pour ton challenge !</p>
+        <div id="resultat"></div>
+
+    </div>
+
+</main>
+
+<script>
+
+function choisirChallenge() {
+
+    const challenges = [
+        "💰 Challenge Sans-abri",
+        "👨‍👩‍👧 Challenge Générations",
+        "🏠 Challenge Construction",
+        "💎 Challenge Riche",
+        "🎨 Challenge Artiste",
+        "👨‍🍳 Challenge Cuisine",
+        "📚 Challenge Étudiant"
+    
+
+];
+
+    const nombre = Math.floor(Math.random() * challenges.length);
+
+    document.getElementById("resultat").textContent =
+        challenges[nombre];
+        const hasard = Math.floor(Math.random() * challenges.length);
+const resultat = document.getElementById("resultat");
+resultat.textContent = "✨ " + challenges[hasard];
+document.getElementById("message").textContent = "🎉 Ton challenge est choisi !";
+resultat.style.transform = "scale(1.05)";
+setTimeout(() => {
+    resultat.style.transform = "scale(1)";
+}, 200);
+resultat.style.animation = "none";
+resultat.offsetHeight;
+resultat.style.animation = "apparition 0.4s ease";
+
+
+}
+
+</script>
+
+</body>
+</html>
