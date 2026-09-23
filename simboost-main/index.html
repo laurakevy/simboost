@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,386 +8,397 @@
 
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f0ff;
-    color: #333;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f0ff;
+            color: #333;
+        }
 
-header {
-    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
+        header {
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
 
-header h1 {
-    font-size: 42px;
-    animation: apparition 0.8s ease;
-    letter-spacing: 1px;
-    margin: 0 0 10px;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+        header h1 {
+            font-size: 42px;
+            animation: apparition 0.8s ease;
+            letter-spacing: 1px;
+            margin: 0 0 10px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-header p {
-    font-size: 18px;
-    opacity: 0.9;
-    margin: 0;
-}
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin: 0;
+        }
 
-nav {
-    background: #4c1d95;
-    text-align: center;
-    padding: 16px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
+        nav {
+            background: #4c1d95;
+            text-align: center;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
-    transition: opacity 0.2s;
-    display: inline-block;
-
-
-}
-
-nav a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
-    transform: scale(1.08);
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+            display: inline-block;
 
 
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px 20px;
-}
+        }
 
-.bienvenue {
-    text-align: center;
-    padding: 40px 10px;
-}
-
-.bienvenue h2 {.bouton {
-    display: inline-block;
-    background: #6d28d9;
-    color: white;
-    padding: 14px 22px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.bouton:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-    font-size: 30px;
-}
-
-.cartes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.carte {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #e9d5ff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    animation: apparition 0.5s ease;
-}
-.carte h3 {
-    color: #6d28d9;
-    margin-top: 0;
-}
-carte p {
-    line-height: 1.6;
-    color: #555;
-}
-
-.carte:hover {
-    transform: translateY(-5px);
-}
-
-footer {
-    text-align: center;
-    background: #4c1d95;
-    color: white;
-    padding: 25px;
-    border-radius: 20px 20px 0 0;
-
-    font-size: 14px;
-    margin-top: 40px;
-    opacity: 0.95;
-    border-top: 3px solid #6d28d9;
+        nav a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+            transform: scale(1.08);
+        }
 
 
-}
-.maison {
-    background: white;
-    padding: 20px;
-    margin: 12px 0;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    font-weight: bold;
-color: #6d28d9;
-}
-animation: apparition 0.5s ease;
-text-align: center;
-font-size: 18px;
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
 
-.maison:hover {
-    transform: translateY(-5px);
-}
-    @keyframes apparition {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
+        .bienvenue {
+            text-align: center;
+            padding: 40px 10px;
+        }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-</style>
-<style>
-.astuce-du-jour {
-    background: white;
-    padding: 25px;
-    margin: 30px auto;
-    max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(109, 40, 217, 0.2);
-    text-align: center;
-}
+        .bienvenue h2 {
+            .bouton {
+                display: inline-block;
+                background: #6d28d9;
+                color: white;
+                padding: 14px 22px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.2s;
+            }
 
-.astuce-du-jour h2 {
-    color: #6d28d9;
-}
+            .bouton:hover {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
 
-#astuce {
-    font-size: 18px;
-    color: #444;
-}
-</style>
-Rédiger
-Écrire à Vanden Eede Laura
-<style>
-.populaires {
-    margin: 40px auto;
-    padding: 25px;
-    max-width: 700px;
-    text-align: center;
-}
+            font-size: 30px;
+        }
 
-.populaires h2 {
-    color: #6d28d9;
-}
+        .cartes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
 
-.cartes-populaires {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
+        .carte {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #e9d5ff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: apparition 0.5s ease;
+        }
 
-.cartes-populaires a {
-    background: #6d28d9;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .carte h3 {
+            color: #6d28d9;
+            margin-top: 0;
+        }
 
-.cartes-populaires a:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-</style>
+        carte p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .carte:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            background: #4c1d95;
+            color: white;
+            padding: 25px;
+            border-radius: 20px 20px 0 0;
+
+            font-size: 14px;
+            margin-top: 40px;
+            opacity: 0.95;
+            border-top: 3px solid #6d28d9;
+
+
+        }
+
+        .maison {
+            background: white;
+            padding: 20px;
+            margin: 12px 0;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            font-weight: bold;
+            color: #6d28d9;
+        }
+
+        animation: apparition 0.5s ease;
+        text-align: center;
+        font-size: 18px;
+
+        .maison:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes apparition {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <style>
+        .astuce-du-jour {
+            background: white;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(109, 40, 217, 0.2);
+            text-align: center;
+        }
+
+        .astuce-du-jour h2 {
+            color: #6d28d9;
+        }
+
+        #astuce {
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+    Rédiger
+    Écrire à Vanden Eede Laura
+    <style>
+        .populaires {
+            margin: 40px auto;
+            padding: 25px;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .populaires h2 {
+            color: #6d28d9;
+        }
+
+        .cartes-populaires {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .cartes-populaires a {
+            background: #6d28d9;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cartes-populaires a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
 
 
 </head>
 
 <body>
 
-<header>
-    💚 SimBoost</h1><h1>
-    <p>Le site de fans pour les joueurs des Sims</p>
-</header>
+    <header>
+        💚 SimBoost</h1>
+        <h1>
+            <p>Le site de fans pour les joueurs des Sims</p>
+    </header>
 
-<nav>
-    <a href="Index.html">Accueil</a>
-<a href="Astuces.html">✨ Astuces</a>
-<a href="#maisons">Maisons</a>
-<a href="Challenges.html">Challenges</a>
-<a href="Outil.html">🎲 Challenge aléatoire</a>
-</nav>
-
-<section class="populaires">
-    <h2>🔥 Les plus populaires</h2>
-
-    <p>✨ Découvre nos contenus préférés des joueurs !</p>
-
-    <div class="cartes-populaires">
-        <a href="Astuces.html">✨ Astuces Sims</a>
-        <a href="Challenges.html">🎯 Challenges Sims</a>
+    <nav>
+        <a href="Index.html">Accueil</a>
+        <a href="Astuces.html">✨ Astuces</a>
+        <a href="#maisons">Maisons</a>
+        <a href="Challenges.html">Challenges</a>
         <a href="Outil.html">🎲 Challenge aléatoire</a>
-    </div>
-</section>
-Rédiger
-Écrire à Vanden Eede Laura
-<main>
+    </nav>
 
-    <section class="bienvenue"><p>
-    <a href="astuces.html" class="bouton">✨ Découvrir les astuces</a>
-</p>
-<a href="challenges.html" class="bouton">✨ Découvrir les challenges</a>
-</p>
-Rédiger
-Écrire à Vanden Eede Laura
+    <section class="populaires">
+        <h2>🔥 Les plus populaires</h2>
 
-        <h2>Bienvenue sur SimBoost ! 👋</h2>
+        <p>✨ Découvre nos contenus préférés des joueurs !</p>
 
-        <p>
-            Découvre des astuces, des idées de maisons,
-            des challenges et des guides pour Les Sims.
-        </p>
-    </section>
-
-    <section id="astuces">
-        <h2>✨ Astuces</h2>
-    
-
-        <div class="cartes">
-<div class="carte">
-    <h3>🎯 Réussir les objectifs</h3>
-    <p>
-        Apprends à organiser les journées de ton Sim
-        et à accomplir ses objectifs plus facilement.
-    </p>
-</div>
-
-<div class="carte">
-    <h3>👨‍👩‍👧 Créer une famille</h3>
-    <p>
-        Découvre des idées pour créer des familles
-        et imaginer leurs histoires.
-    </p>
-</div>
-            <div class="carte">
-                <h3>💰 Gagner de l'argent</h3>
-                <p>
-                    Découvre différentes façons de développer
-                    la carrière de ton Sim.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>🏠 Construire une maison</h3>
-                <p>
-                    Des idées simples pour créer
-                    une belle maison.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>🎯 Challenges</h3>
-                <p>
-                    Découvre des défis amusants
-                    à essayer dans ta partie.
-                </p>
-            </div>
-
+        <div class="cartes-populaires">
+            <a href="Astuces.html">✨ Astuces Sims</a>
+            <a href="Challenges.html">🎯 Challenges Sims</a>
+            <a href="Outil.html">🎲 Challenge aléatoire</a>
         </div>
     </section>
+    Rédiger
+    Écrire à Vanden Eede Laura
+    <main>
 
-    <section id="maisons">
-        <section class="astuce-du-jour">
-    <h2>💡 Astuce du jour</h2>
-    <p id="astuce"></p>
-</section>
+        <section class="bienvenue">
+            <p>
+                <a href="astuces.html" class="bouton">✨ Découvrir les astuces</a>
+            </p>
+            <a href="challenges.html" class="bouton">✨ Découvrir les challenges</a>
+            </p>
+            Rédiger
+            Écrire à Vanden Eede Laura
 
-        <h2>🏠 Maisons</h2>
-        <p>✨ Découvre des idées de maisons pour créer la vie de tes rêves dans Les Sims !</p>
+            <h2>Bienvenue sur SimBoost ! 👋</h2>
 
-           <p>
-    Découvre nos idées de maisons pour Les Sims :
-</p>
+            <p>
+                Découvre des astuces, des idées de maisons,
+                des challenges et des guides pour Les Sims.
+            </p>
+        </section>
 
-<ul>
-    <li class="maison">🏡 Maison familiale</li>
-    <li class="maison">🌴 Villa moderne</li>
-   <li class="maison">🏠 Petite maison cosy</li>
-   <li class="maison">🏰 Grande maison de rêve</li>
-</ul>
-        </p>
-    </section>
+        <section id="astuces">
+            <h2>✨ Astuces</h2>
 
-    <section id="challenges">
-        <h2>🎯 Challenges</h2>
-        <p>
+
+            <div class="cartes">
+                <div class="carte">
+                    <h3>🎯 Réussir les objectifs</h3>
+                    <p>
+                        Apprends à organiser les journées de ton Sim
+                        et à accomplir ses objectifs plus facilement.
+                    </p>
+                </div>
+
+                <div class="carte">
+                    <h3>👨‍👩‍👧 Créer une famille</h3>
+                    <p>
+                        Découvre des idées pour créer des familles
+                        et imaginer leurs histoires.
+                    </p>
+                </div>
+                <div class="carte">
+                    <h3>💰 Gagner de l'argent</h3>
+                    <p>
+                        Découvre différentes façons de développer
+                        la carrière de ton Sim.
+                    </p>
+                </div>
+
+                <div class="carte">
+                    <h3>🏠 Construire une maison</h3>
+                    <p>
+                        Des idées simples pour créer
+                        une belle maison.
+                    </p>
+                </div>
+
+                <div class="carte">
+                    <h3>🎯 Challenges</h3>
+                    <p>
+                        Découvre des défis amusants
+                        à essayer dans ta partie.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="maisons">
+            <section class="astuce-du-jour">s
+                <h2>💡 Astuce du jour</h2>
+                <p id="astuce"></p>
+            </section>
+
+            <h2>🏠 Maisons</h2>
+            <p>✨ Découvre des idées de maisons pour créer la vie de tes rêves dans Les Sims !</p>
+
+            <p>
+                Découvre nos idées de maisons pour Les Sims :
+            </p>
+
+            <ul>
+                <li class="maison">🏡 Maison familiale</li>
+                <li class="maison">🌴 Villa moderne</li>
+                <li class="maison">🏠 Petite maison cosy</li>
+                <li class="maison">🏰 Grande maison de rêve</li>
+            </ul>
+            </p>
+        </section>
+
+        <section id="challenges">
+            <h2>🎯 Challenges</h2>
+            <p>
             <p>Choisis un défi et crée ta propre histoire dans Les Sims !</p>
 
-<div class="cartes">
+            <div class="cartes">
 
-    <div class="carte">
-        <h3>🏡 Challenge Sans Argent</h3>
-        <p>
-            Commence avec très peu de ressources et construis
-            progressivement la vie de ton Sim.
-        </p>
-    </div>
+                <div class="carte">
+                    <h3>🏡 Challenge Sans Argent</h3>
+                    <p>
+                        Commence avec très peu de ressources et construis
+                        progressivement la vie de ton Sim.
+                    </p>
+                </div>
 
-    <div class="carte">
-        <h3>👨‍👩‍👧 Challenge Grande Famille</h3>
-        <p>
-            Crée une famille nombreuse et fais évoluer
-            chaque membre au fil des générations.
-        </p>
-    </div>
+                <div class="carte">
+                    <h3>👨‍👩‍👧 Challenge Grande Famille</h3>
+                    <p>
+                        Crée une famille nombreuse et fais évoluer
+                        chaque membre au fil des générations.
+                    </p>
+                </div>
 
-    <div class="carte">
-        <h3>🎨 Challenge Créatif</h3>
-        <p>
-            Construis une maison originale en laissant
-            libre cours à ton imagination.
-        </p>
-    </div>
+                <div class="carte">
+                    <h3>🎨 Challenge Créatif</h3>
+                    <p>
+                        Construis une maison originale en laissant
+                        libre cours à ton imagination.
+                    </p>
+                </div>
 
-</div>
-        </p>
-    </section>
+            </div>
+            </p>
+        </section>
 
-</main>
+    </main>
 
-<footer><p>🎮 SimBoost — Ton petit coin de fans des Sims 💜</p>
-    <p>© 2026 SimBoost — Site de fans indépendant</p>
-</footer>
+    <footer>
+        <p>🎮 SimBoost — Ton petit coin de fans des Sims 💜</p>
+        <p>© 2026 SimBoost — Site de fans indépendant</p>
+    </footer>
 
-<script>
-const astuces = [
-    "💰 Utilise les codes de triche pour gagner du temps.",
-    "🏠 Pense à améliorer régulièrement ta maison.",
-    "❤️ Fais des activités avec tes Sims pour améliorer leurs relations.",
-    "🎯 Essaie un nouveau challenge pour changer ta façon de jouer.",
-    "🌱 Les plantes peuvent être une bonne source de revenus."
-];
+    <script>
+        const astuces = [
+            "💰 Utilise les codes de triche pour gagner du temps.",
+            "🏠 Pense à améliorer régulièrement ta maison.",
+            "❤️ Fais des activités avec tes Sims pour améliorer leurs relations.",
+            "🎯 Essaie un nouveau challenge pour changer ta façon de jouer.",
+            "🌱 Les plantes peuvent être une bonne source de revenus."
+        ];
 
-const astuceAleatoire = astuces[Math.floor(Math.random() * astuces.length)];
+        const astuceAleatoire = astuces[Math.floor(Math.random() * astuces.length)];
 
-document.getElementById("astuce").textContent = astuceAleatoire;
-</script></body>
+        document.getElementById("astuce").textContent = astuceAleatoire;
+    </script>
+</body>
+
 </html>
-
